@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Comunidad Hugo Chavez Frías</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="iconos/css/all.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src='js/bootstrap.js'></script>
+</head>
+<body>
+    <div class="container-fluid">
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="menu-principal.html">
+            <img src="img/personas.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            Hugo Chavez Frías
+          </a>
+        <div class="btn-group">
+            <i class="fas fa-bell fa-lg mr-3 mt-2"></i>
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i>
+              Perfil
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" >
+              <a href="#" class="dropdown-item" id="perfil" role="button">Informacion</a>
+              <a href="#" class="dropdown-item" id="perfil" role="button">Editar</a>
+              <a href="index.html" class="dropdown-item" id="perfil" role="button">Salir</a>
+            </div>
+          </div>
+    </nav>
+    <div class="row">
+        <div class="col">
+            <div class="card border-danger mb-3 ml-5 mr-5 mt-3" >
+                <div class="card-header text-center">
+                    <div class="row">
+                        <div class="col-11 pr-">
+                            <h4>Crear Evento</h4>
+                        </div>
+                        <div class="col-1">
+                            <a href="eventos.html"><i class="fas fa-times text-danger"></i></a>
+                        </div>
+                    </div>  
+                </div>
+                <div class="card-body ">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-6">
+                                <label>Titulo</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="col">
+                                <label>Fecha</label>
+                                <input type="date" class="form-control" >
+                            </div>  
+                            <div class="col ">
+                                <label>Hora</label>
+                                <input type="time" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <label>Lugar</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>Descripción</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center mt-3">
+                            <div class="col-2">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Enviar</button>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-outline-danger my-2 my-sm-0" type="reset">Limpiar</button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                  
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

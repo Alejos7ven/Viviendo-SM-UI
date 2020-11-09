@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Comunidad Hugo Chavez Frías</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="iconos/css/all.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src='js/bootstrap.js'></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="menu-principal.html">
+            <img src="img/personas.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            Hugo Chavez Frías
+          </a>
+        <div class="btn-group">
+            <i class="fas fa-bell fa-lg mr-3 mt-2"></i>
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i>
+              Perfil
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" >
+              <a href="#" class="dropdown-item" id="perfil" role="button">Informacion</a>
+              <a href="#" class="dropdown-item" id="perfil" role="button">Editar</a>
+              <a href="index.html" class="dropdown-item" id="perfil" role="button">Salir</a>
+            </div>
+          </div>
+    </nav>
+    <div class="row">
+     
+        <div class="col-3 h-100 position-sticky"> 
+          <div class="card border-danger mt-5">
+            <div class="card-header bg-danger text-center">
+              <h4>MENU</h4>
+            </div>
+            <div class="card-body bg-light p-0">
+              <div class="btn-group-vertical btn-block">
+                <a class="btn btn-light" href="menu-principal.html" role="button">Inicio</a>
+                <a class="btn btn-light" href="personas.html" role="button">Personas</a>
+                <a class="btn btn-light" href="eventos.html" role="button">Eventos</a>
+                <a class="btn btn-light active" href="reportes.html" role="button">Reportes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="row">
+            <div class="col">
+              <h3 class="ml-5 mt-3">
+                <i class="fas fa-clipboard"></i>
+                Reportes
+              </h3>
+            </div>
+          </div>
+           <div class="row mt-4 ml-5 justify-content-center">
+               <div class="col">
+                <a class="text-dark text-decoration-none" href="personas.html">
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-3 bg-info ">
+                      <i class="fas fa-users fa-3x mt-3 ml-3"></i>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="card-body text-center">
+                        <h4 class="card-title font-weight-bold">Reporte de asistencias</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </a>
+               </div>
+           </div>
+           <div class="row mt-4 ml-5 justify-content-center">
+            <div class="col">
+             <a class="text-dark text-decoration-none" href="reporte-registro.html">
+             <div class="card mb-3" style="max-width: 540px;">
+               <div class="row no-gutters">
+                 <div class="col-md-3 bg-info ">
+                   <i class="fas fa-users fa-3x mt-3 ml-3"></i>
+                 </div>
+                 <div class="col-md-9">
+                   <div class="card-body text-center">
+                     <h4 class="card-title font-weight-bold">Reporte de registros</h4>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             </a>
+            </div>
+        </div>
+           
+
+        </div>
+    </div>
+  </div>
+</body>
+</html>

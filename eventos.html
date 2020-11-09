@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Comunidad Hugo Chavez Frías</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="iconos/css/all.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src='js/bootstrap.js'></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="menu-principal.html">
+            <img src="img/personas.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            Hugo Chavez Frías
+          </a>
+        <div class="btn-group">
+            <i class="fas fa-bell fa-lg mr-3 mt-2"></i>
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i>
+              Perfil
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" >
+              <a href="#" class="dropdown-item" id="perfil" role="button">Informacion</a>
+              <a href="#" class="dropdown-item" id="perfil" role="button">Editar</a>
+              <a href="index.html" class="dropdown-item" id="perfil" role="button">Salir</a>
+            </div>
+          </div>
+    </nav>
+    <div class="row">
+     
+        <div class="col-3 h-100 position-sticky"> 
+          <div class="card border-danger mt-5">
+            <div class="card-header bg-danger text-center">
+              <h4>MENU</h4>
+            </div>
+            <div class="card-body bg-light p-0">
+              <div class="btn-group-vertical btn-block">
+                <a class="btn btn-light" href="menu-principal.html" role="button">Inicio</a>
+                <a class="btn btn-light" href="personas.html" role="button">Personas</a>
+                <a class="btn btn-light active" href="eventos.html" role="button">Eventos</a>
+                <a class="btn btn-light" href="reportes.html" role="button">Reportes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="row">
+            <div class="col">
+                
+                <h3 class="ml-5 mt-3">
+                    <i class="fas fa-calendar-day"></i>
+                    Eventos
+                </h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                  <div class="row">
+                    <div class="col">
+                      <a class="btn btn-info" href="formulario-evento.html" role="button">
+                        <i class="fas fa-plus"></i>
+                        Agg Eventos</a>
+                    </div>
+                    <div class="col">
+                      <form class="form-inline justify-content-end">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  
+                  </div>
+                </div>
+                <div class="card-body ">
+                  <div class="row pt-3 pb-3 bg-danger text-center">
+                    <div class="col">
+                      <h6 class="font-weight-bold">Título</h6>
+                    </div>
+                    <div class="col">
+                      <h6 class="font-weight-bold">Fecha</h6>
+                    </div>
+                    <div class="col">
+                      <h6 class="font-weight-bold">Hora</h6>
+                    </div>
+                    <div class="col">
+                      <h6 class="font-weight-bold">Lugar</h6>
+                    </div>
+                    <div class="col">
+                        <h6 class="font-weight-bold">Acción</h6>
+                      </div>
+                  </div>
+                  <div class="row mt-2 mb-2 text-center">
+                    <div class="col">entrega hogar</div>
+                    <div class="col">10/11/20</div>
+                    <div class="col">8:30 am</div>
+                    <div class="col">los roques</div>
+                    <div class="col">
+                      <a class="btn btn-warning btn-sm" href="modificar-evento.html" role="button" title="Modificar">
+                        <i class="fas fa-pen-alt "></i>
+                      </a>
+                      <a class="btn btn-info btn-sm" href="ver-evento.html" role="button" title="Información">
+                        <i class="fas fa-search-plus  "></i>
+                      </a>
+                      <a class="btn btn-danger btn-sm" href="#" role="button" title="Eliminar">
+                        <i class=" fas fa-trash "></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row mt-2 mb-2 text-center">
+                    <div class="col">entrega hogar</div>
+                    <div class="col">10/11/20</div>
+                    <div class="col">8:30 am</div>
+                    <div class="col">los roques</div>
+                    <div class="col">
+                      <a class="btn btn-warning btn-sm" href="modificar-evento.html" role="button" title="Modificar">
+                        <i class="fas fa-pen-alt "></i>
+                      </a>
+                      <a class="btn btn-info btn-sm" href="ver-evento.html" role="button" title="Información">
+                        <i class="fas fa-search-plus "></i>
+                      </a>
+                      <a class="btn btn-danger btn-sm" href="#" role="button" title="Eliminar">
+                        <i class=" fas fa-trash "></i>
+                      </a>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+           
+
+        </div>
+    </div>
+  </div>
+</body>
+</html>
