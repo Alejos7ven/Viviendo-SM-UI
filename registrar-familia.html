@@ -38,10 +38,10 @@
                 <div class="card-header text-center">
                     <div class="row">
                         <div class="col-11 pr-">
-                            <h4>Registrar persona</h4>
+                            <h4>Registrar familia</h4>
                         </div>
                         <div class="col-1">
-                            <a href="personas.html">
+                            <a href="nucleo-familiar.html">
                                 <i class="fas fa-times text-danger"></i>
                             </a>
                         </div>
@@ -49,6 +49,12 @@
                 </div>
                 <div class="card-body ">
                     <form action="">
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5 class="">Datos del cónyuge</h5>
+                            </div>
+                        </div>
+                        <hr>
                         <div class="row">
                             <div class="col">
                                 <label>Nombres</label>
@@ -86,54 +92,72 @@
                                 <input type="text" class="form-control" >
                             </div>
                         </div>
-                        <div class="row mt-3">
-                            <div class="col">
-                                <label>Correo</label>
-                                <input type="email" class="form-control" >
-                            </div>
-                            <div class="col">
-                                <label>Serial carnet de la patria</label>
-                                <input type="text" class="form-control" >
-                            </div>
-                            <div class="col">
-                                <label>Serial PSUV</label>
-                                <input type="text" class="form-control" >
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col">
-                                <label>Dirección</label>
-                                <input type="text" class="form-control" >
-                            </div>
-                        </div>
                         <div class="row">
                             <div class="col mt-3">
-                                <label> Condidión en la que vive</label><br>
+                                <label>¿Viven juntos?</label><br>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="RadioOptions" id="Radio1" value="1">
-                                    <label class="form-check-label" for="Radio1">Arrimado</label>
+                                    <input class="form-check-input" type="radio" name="inlineOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">SI</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="RadioOptions" id="Radio2" value="2">
-                                    <label class="form-check-label" for="Radio2">Alquilado</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="RadioOptions" id="Radio3" value="3">
-                                    <label class="form-check-label" for="Radio3">Casa propia</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="RadioOptions" id="Radio4" value="4">
-                                    <label class="form-check-label" for="Radio4">Rancho</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="RadioOptions" id="Radio5" value="5">
-                                    <label class="form-check-label" for="Radio5">Refugio</label>
-                                </div>
+                                    <input class="form-check-input" type="radio" name="inlineOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">NO</label>
+                                </div> 
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col text-center">
+                                <h5 class="">Datos de los hijos</h5>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="ro">
+                            <div class="col-6">
+                                <label >Cantidad de hijos</label><br>
+                                <input type="number" min="0" class="form-control w-25">
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col">
-                                <label >¿A sido beneficiado con alguna casa, apartamento, terreno o materiales para su construcción?</label><br>
+                                <label>Nombres</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="col">
+                                <label>Apellidos</label>
+                                <input type="text" class="form-control" >
+                            </div>  
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col ">
+                                <label>Cedula</label>
+                                <div class="row ">
+                                    <div class="col-4">
+                                        <select class="form-control ">
+                                            <option>-</option>
+                                            <option>V</option>
+                                            <option>E</option>
+                                            <option>J</option>
+                                            <option>G</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label>Fecha de nacimiento</label>
+                                <input type="date" class="form-control" value="2001/02/25" >
+                            </div>
+                            <div class="col">
+                                <label >Edad</label>
+                                <input type="number" min="0" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <label>¿Estudian?</label>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                                     <label class="form-check-label" for="inlineRadio1">SI</label>
@@ -144,9 +168,18 @@
                                 </div> 
                             </div>
                         </div>
-                        <div class="row mt-3">
+                        <hr>
+                        <div class="row">
                             <div class="col">
-                                <a href="registrar-familia.html">Núcleo familiar</a>
+                                <label>¿Algún familiar con discapasidad?</label><br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="RadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">SI</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="RadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">NO</label>
+                                </div>
                             </div>
                         </div>
                         <div class="row justify-content-md-center mt-3">
