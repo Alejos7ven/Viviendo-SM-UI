@@ -13,7 +13,7 @@
     <script src='js/bootstrap.js'></script>
 </head>
 <body>
-    <div class="container-fluid">
+  <div class="container-fluid">
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="menu-principal.html">
             <img src="img/personas.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
@@ -33,15 +33,40 @@
           </div>
     </nav>
     <div class="row">
-        <div class="col">
+     
+        <div class="col-3 h-100 position-sticky"> 
+          <div class="card border-danger mt-5">
+            <div class="card-header bg-danger text-center">
+              <h4>MENU</h4>
+            </div>
+            <div class="card-body bg-light p-0">
+              <div class="btn-group-vertical btn-block">
+                <a class="btn btn-light active" href="menu-principal.html" role="button">Inicio</a>
+                <a class="btn btn-light" href="personas.html" role="button">Personas</a>
+                <a class="btn btn-light" href="nucleo-familiar.html" role="button">Núcleo familiar</a>
+                <a class="btn btn-light" href="eventos.html" role="button">Eventos</a>
+                <a class="btn btn-light" href="reportes.html" role="button">Reportes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-9">
+            <div class="row">
+                <div class="col">
+                  <h3 class="ml-5 mt-3">
+                    <i class="fas fa-user"></i>
+                    Perfil
+                  </h3>
+                </div>
+              </div>
             <div class="card border-danger mb-3 ml-5 mr-5 mt-3" >
                 <div class="card-header text-center">
                     <div class="row">
                         <div class="col-11 pr-">
-                            <h4>Crear Evento</h4>
+                            <h4>Editar usuario</h4>
                         </div>
                         <div class="col-1">
-                            <a href="eventos.html">
+                            <a href="menu-principal.html">
                                 <i class="fas fa-times text-danger"></i>
                             </a>
                         </div>
@@ -49,49 +74,29 @@
                 </div>
                 <div class="card-body ">
                     <form action="">
-                        <div class="row">
-                            <div class="col-6">
-                                <label>Titulo</label>
-                                <input type="text" class="form-control" value="Entrega casas">
-                            </div>
-                            <div class="col">
-                                <label>Fecha</label>
-                                <input type="date" class="form-control" value="2020-08-26" >
-                            </div>  
-                            <div class="col ">
-                                <label>Hora</label>
-                                <input type="time" class="form-control" value="08:30:00">
-                            </div>
+                        <div class="row text-center justify-content-center">
+                            <div class="col-8">
+                                <label>Nombre de usuario</label>
+                                <input type="text" class="form-control" value="aripao" >
+                            </div> 
                         </div>
-                        <div class="row mt-3">
-                            <div class="col">
-                                <label>Lugar</label>
-                                <input type="text" class="form-control" value="Los roques" >
-                            </div>
+                        <div class="row text-center justify-content-center mt-3 ">
+                            <div class="col-8">
+                                <label>Contraseña</label>
+                                <input type="password" class="form-control" value="27629581" >
+                            </div> 
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <label>Descripción</label>
-                                <textarea class="form-control" rows="3" >Entrega de casas a las personas asignada en la comunidad hugo chavez frias</textarea>
-                            </div>
-                        </div>
-                        <div class="row justify-content-md-center mt-3">
-                            <div class="col-2">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Enviar</button>
-                            </div>
-                            <div class="col-2">
-                                <button class="btn btn-outline-danger my-2 my-sm-0" type="reset">Limpiar</button>
-                            </div>
+                        <div class="row text-center justify-content-center mt-3 ">
+                            <div class="col-8">
+                                <label>Confirmar contraseña</label>
+                                <input type="password" class="form-control" value="27629581" >
+                            </div> 
                         </div>
                     </form>
-                    
-                  
                 </div>
+            
         </div>
     </div>
-</div>
-
-
-
+  </div>
 </body>
 </html>
