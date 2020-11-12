@@ -37,10 +37,10 @@
             <div class="card border-danger mb-3 ml-5 mr-5 mt-3" >
                 <div class="card-header text-center">
                     <div class="row">
-                        <div class="col-11 pr-">
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-11 col-xl-11">
                             <h4>Modificar familia</h4>
                         </div>
-                        <div class="col-1">
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1">
                             <a href="nucleo-familiar.html">
                                 <i class="fas fa-times text-danger"></i>
                             </a>
@@ -50,23 +50,23 @@
                 <div class="card-body ">
                     <form action="">
                         <div class="row">
-                            <div class="col text-center">
+                            <div class="col-12 text-center">
                                 <h5 class="">Datos del cónyuge</h5>
                             </div>
                         </div>
                         <hr>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6">
                                 <label>Nombres</label>
                                 <input type="text" class="form-control" value="Jose Manuel" >
                             </div>
-                            <div class="col">
+                            <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6">
                                 <label>Apellidos</label>
                                 <input type="text" class="form-control" value="Colmenarez" >
                             </div>  
                         </div>
                         <div class="row mt-3">
-                            <div class="col ">
+                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 ">
                                 <label>Cedula</label>
                                 <div class="row ">
                                     <div class="col-4">
@@ -83,11 +83,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4">
                                 <label>Fecha de nacimiento</label>
                                 <input type="date" class="form-control" value="1967-12-25" >
                             </div>
-                            <div class="col">
+                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4">
                                 <label >Teléfono</label>
                                 <input type="text" class="form-control" value="04268939929" >
                             </div>
@@ -107,29 +107,29 @@
                         </div>
                         <hr>
                         <div class="row">
-                            <div class="col text-center">
+                            <div class="col-12 text-center">
                                 <h5 class="">Datos de los hijos</h5>
                             </div>
                         </div>
                         <hr>
-                        <div class="ro">
-                            <div class="col-6">
+                        <div class="row">
+                            <div class="col-12">
                                 <label >Cantidad de hijos</label><br>
                                 <input type="number" min="0" class="form-control w-25">
                             </div>
                         </div>
                         <div class="row mt-3">
-                            <div class="col">
+                            <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6">
                                 <label>Nombres</label>
                                 <input type="text" class="form-control" >
                             </div>
-                            <div class="col">
+                            <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6">
                                 <label>Apellidos</label>
                                 <input type="text" class="form-control" >
                             </div>  
                         </div>
                         <div class="row mt-3">
-                            <div class="col ">
+                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 ">
                                 <label>Cedula</label>
                                 <div class="row ">
                                     <div class="col-4">
@@ -146,11 +146,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4">
                                 <label>Fecha de nacimiento</label>
                                 <input type="date" class="form-control" value="2001/02/25" >
                             </div>
-                            <div class="col">
+                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4">
                                 <label >Edad</label>
                                 <input type="number" min="0" class="form-control" >
                             </div>
@@ -169,25 +169,16 @@
                             </div>
                         </div>
                         <hr>
-                        <div class="row">
-                            <div class="col">
-                                <label>¿Algún familiar con discapasidad?</label><br>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="RadioOptions" id="inlineRadio1" value="option1">
-                                    <label class="form-check-label" for="inlineRadio1">SI</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="RadioOptions" id="inlineRadio2" value="option2" checked>
-                                    <label class="form-check-label" for="inlineRadio2">NO</label>
-                                </div>
-                            </div>
-                        </div>
                         <div class="row justify-content-md-center mt-3">
-                            <div class="col-2">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Enviar</button>
-                            </div>
-                            <div class="col-2">
-                                <button class="btn btn-outline-danger my-2 my-sm-0" type="reset">Limpiar</button>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-5 col-sm-5 col-md-3 col-lg-2 col-xl-2">
+                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Enviar</button>
+                                    </div>
+                                    <div class="col-5 col-sm-5 col-md-3 col-lg-2 col-xl-2 ml-1">
+                                        <button class="btn btn-outline-danger my-2 my-sm-0" type="reset">Limpiar</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </form>

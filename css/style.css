@@ -1,3 +1,17 @@
 #perfil:active{
     background-color: #d9534f;
 }
+.info-users {
+    overflow-x:auto;
+    width: 100%;
+}
+.row-table{
+    min-width: 800px;
+}
+.row-table-nucleo{
+    min-width: 500px;
+}
+.ta-r{
+    text-align: right;
+    align-items: right;
+}
