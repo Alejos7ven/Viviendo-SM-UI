@@ -26,9 +26,9 @@
               Perfil
             </button>
             <div class="dropdown-menu dropdown-menu-right" >
-              <a href="informacion.html" class="dropdown-item" id="perfil" role="button">Informacion</a>
+              <a href="informacion.html" class="dropdown-item" id="perfil" role="button">Información</a>
               <a href="editar.html" class="dropdown-item" id="perfil" role="button">Editar</a>
-              <a href="index.html" class="dropdown-item" id="perfil" role="button">Salir</a>
+              <a href="index.html" class="dropdown-item" id="perfil" role="button">Cerrar sesión</a>
             </div>
           </div>
     </nav>
@@ -73,30 +73,66 @@
                     </div>  
                 </div>
                 <div class="card-body ">
-                    <form action="">
+                    <form action="" class="formulario" id="formulario">
                         <div class="row text-center justify-content-center">
-                            <div class="col-8">
-                                <label>Nombre de usuario</label>
-                                <input type="text" class="form-control" value="aripao" >
+                            <div class="col-8 formulario_grupo" id="grupo_usuario">
+                                <label for="usuario" class="formulario_label">Nombre de usuario</label>
+                                <div class="formulario_grupo-input">
+                                  <input type="text" class="form-control formulario_input" name="usuario" id="usuario" value="aripao" >
+                                  <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario_input-error">El usuario tiene que ser de 6-16 dígitos y solo puede contener números, letras y guion bajo </p>
                             </div> 
                         </div>
                         <div class="row text-center justify-content-center mt-3 ">
-                            <div class="col-8">
-                                <label>Contraseña</label>
-                                <input type="password" class="form-control" value="27629581" >
+                            <div class="col-8 formulario_grupo" id="grupo_password">
+                                <label for="password" class="formulario_label">Contraseña</label>
+                                <div class="formulario_grupo-input">
+                                  <input type="text" class="form-control formulario_input" name="password" id="password" value="27629581" >
+                                  <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario_input-error">La contraseña tiene que ser de 4-12 dígitos </p>
                             </div> 
                         </div>
                         <div class="row text-center justify-content-center mt-3 ">
-                            <div class="col-8">
-                                <label>Confirmar contraseña</label>
-                                <input type="password" class="form-control" value="27629581" >
+                            <div class="col-8 formulario_grupo" id="grupo_password2">
+                                <label for="password2" class="formulario_label">Confirmar contraseña</label>
+                                <div class="formulario_grupo-input">
+                                  <input type="text" class="form-control formulario_input" name="password2" id="password2" value="27629581" >
+                                  <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario_input-error">Ambas contraseñas deben ser iguales </p>
                             </div> 
                         </div>
+                        <div class="row text-center justify-content-center mt-3">
+                          <div class="col-7 formulario_mensaje" id="formulario_mensaje">
+                            <p class="my-1"><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario </p>
+                          </div>
+                        </div>
+                        <div class="row text-center justify-content-center mt-3">
+                          <div class="col">
+                              <button class="btn btn-outline-success my-1 my-sm-0 px-5" type="submit" onclick="location.reload();" value="Actualizar">Enviar</button>
+                          </div>
+                        </div>
+                        
+
                     </form>
                 </div>
             
         </div>
     </div>
   </div>
+  <script>
+    formulario.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if(campos.usuario || campos.password  ){
+       alert("Modificado exitosamente");
+      
+      } else {
+          alert("No se ha modificado nada");
+        }
+    });
+  </script>
+  <script src="js/formulario.js"></script>
 </body>
 </html>

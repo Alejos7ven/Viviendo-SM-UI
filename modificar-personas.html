@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Comunidad Hugo Chavez Frías</title>
+    <title>Comunidad Hugo Chávez Frías</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
     <link rel="stylesheet" href="css/style.css">
@@ -17,7 +17,7 @@
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="menu-principal.html">
             <img src="img/personas.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-            Hugo Chavez Frías
+            Hugo Chávez Frías
           </a>
         <div class="btn-group">
             <i class="fas fa-bell fa-lg mr-3 mt-2"></i>
@@ -28,7 +28,7 @@
             <div class="dropdown-menu dropdown-menu-right" >
               <a href="informacion.html" class="dropdown-item" id="perfil" role="button">Informacion</a>
               <a href="editar.html" class="dropdown-item" id="perfil" role="button">Editar</a>
-              <a href="index.html" class="dropdown-item" id="perfil" role="button">Salir</a>
+              <a href="index.html" class="dropdown-item" id="perfil" role="button">Cerrar sesión</a>
             </div>
           </div>
     </nav>
@@ -48,112 +48,203 @@
                     </div>  
                 </div>
                 <div class="card-body ">
-                    <form action="">
+                    <form action="" id="formulario" class="formulario">
                         <div class="row">
-                            <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6">
-                                <label>Nombres</label>
-                                <input type="text" class="form-control" value="Arianna Paola" >
+                            <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6 formulario_grupo" id="grupo_nombre">
+                                <label for="nombre" class="fomulario_label">Nombres</label>
+                                <div class="formulario_grupo-input">
+                                    <input type="text" class="form-control formulario_input" name="nombre" id="nombre" value="Arianna Paola" >
+                                    <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario_input-error">El Nombre tiene que ser de 4-30 dígitos y solo puede contener letras y acentos</p>
                             </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6">
-                                <label>Apellidos</label>
-                                <input type="text" class="form-control" value="Colmenarez Ramones" >
+                            <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6 formulario_grupo" id="grupo_apellido">
+                                <label for="apellido" class="fomulario_label">Apellidos</label>
+                                <div class="formulario_grupo-input">
+                                    <input type="text" class="form-control formulario_input" name="apellido" id="apellido" value="Colmenarez Ramones">
+                                    <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario_input-error">El apellido tiene que ser de 3-30 dígitos y solo puede contener letras y acentos.</p>
                             </div>  
                         </div>
                         <div class="row mt-3">
-                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 ">
-                                <label>Cedula</label>
-                                <div class="row ">
-                                    <div class="col-4">
-                                        <select class="form-control ">
-                                            <option>V</option>
-                                            <option>-</option>
-                                            <option>E</option>
-                                            <option>J</option>
-                                            <option>G</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-8">
-                                        <input type="text" class="form-control" value="27629581" >
+                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 " >
+                                <div class="formulario_grupo" id="grupo_cedula_na">
+                                    <label>Cedula</label>
+                                    <div class="row ">
+                                        <div class="col-4 formulario_grupo-input" >
+                                            <select class="form-control formulario_input" name="cedula_na" id="cedula_na">
+                                                <option value="0">V</option>
+                                                <option value="1">-</option>
+                                                <option value="2">E</option>
+                                                <option value="3">J</option>
+                                                <option value="4">G</option>
+                                            </select>
+                                            <p id="opcion" class="formulario_input-error">Seleccione una opción.</p>
+                                        </div>
+                                        <div class="col-8 formulario_grupo-input" id="grupo_cedula">
+                                            <input type="text" class="form-control formulario_input" name="cedula" id="cedula" value="12827272" >
+                                            <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                                        </div>
+                                        <p class="formulario_input-error">La Cedula solo puede contener números.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4">
-                                <label>Fecha de nacimiento</label>
-                                <input type="date" class="form-control" value="2001-02-25" >
+                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 formulario_grupo" id="grupo_fecha">
+                                <label for="fecha" class="formulario_label">Fecha de nacimiento</label>
+                                <div class="formulario_grupo-input">
+                                    <input type="date" class="form-control formulario_input" name="fecha" id="fecha" value="2001-02-25" >
+                                </div>
                             </div>
-                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4">
-                                <label >Teléfono</label>
-                                <input type="text" class="form-control" value="04169594929" >
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4">
-                                <label>Correo</label>
-                                <input type="email" class="form-control" value="aripaocol@gmail.com" >
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4">
-                                <label>Serial carnet de la patria</label>
-                                <input type="text" class="form-control"  value="829382938293">
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4">
-                                <label>Serial PSUV</label>
-                                <input type="text" class="form-control" value="89238492349" >
+                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 formulario_grupo" id="grupo_telefono">
+                                <label for="telefono" class="formulario_label">Teléfono</label>
+                                <div class="formulario_grupo-input">
+                                    <input type="text" class="form-control formulario_input" name="telefono" id="telefono" value="04269898098" >
+                                    <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario_input-error">El teléfono solo puede contener números.</p>
                             </div>
                         </div>
                         <div class="row mt-3">
-                            <div class="col">
-                                <label>Dirección</label>
-                                <input type="text" class="form-control" value="Duaca Lara" >
+                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 formulario_grupo" id="grupo_correo">
+                                <label for="correo" class="formulario_label">Correo</label>
+                                <div class="formulario_grupo-input">
+                                    <input type="email" class="form-control formulario_input" name="correo" id="correo" value="aripaocol@gmail.com">
+                                    <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                                  </div>
+                                  <p class="formulario_input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 formulario_grupo" id="grupo_serial">
+                                <label for="serial" class="formulario_label">Serial carnet de la patria</label>
+                                <div class="formulario_grupo-input">
+                                    <input type="text" class="form-control formulario_input" name="serial" id="serial" value="9826728273" >
+                                    <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario_input-error">El serial solo puede contener 10 dígitos y solo números .</p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 formulario_grupo" id="grupo_serial2">
+                                <label for="serial2" class="formulario_label">Serial PSUV</label>
+                                <div class="formulario_grupo-input">
+                                    <input type="text" class="form-control formulario_input" name="serial2" id="serial2" value="829383938">
+                                    <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario_input-error">El serial solo puede contener 10 dígitos y solo números.</p>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col formulario_input" id="grupo_direccion">
+                                <label for="direccion" class="formulario_label">Dirección</label>
+                                <div class="formulario_grupo-input">
+                                    <input type="text" class="form-control formulario_input" name="direccion" id="direccion" value="duaca-lara">
+                                    <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario_input-error">la descripcion solo puede contener letras y numeros.</p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col mt-3">
-                                <label> Condidión en la que vive</label><br>
+                            <div class="col mt-3 formulario_grupo" id="grupo_radioOptions">
+                                <label for="radio" class="formulario_label"> Condidión en la que vive</label><br>
+                                <div class="formulario_grupo-input">
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="RadioOptions" id="Radio1" value="1">
+                                    <input class="form-check-input" type="radio" name="radioOptions" id="Radio1" value="1">
                                     <label class="form-check-label" for="Radio1">Arrimado</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="RadioOptions" id="Radio2" value="2" checked>
+                                    <input class="form-check-input" type="radio" name="radioOptions" id="Radio2" value="2" checked>
                                     <label class="form-check-label" for="Radio2">Alquilado</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="RadioOptions" id="Radio3" value="3">
+                                    <input class="form-check-input" type="radio" name="radioOptions" id="Radio3" value="3">
                                     <label class="form-check-label" for="Radio3">Casa propia</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="RadioOptions" id="Radio4" value="4">
+                                    <input class="form-check-input" type="radio" name="radioOptions" id="Radio4" value="4">
                                     <label class="form-check-label" for="Radio4">Rancho</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="RadioOptions" id="Radio5" value="5">
+                                    <input class="form-check-input" type="radio" name="radioOptions" id="Radio5" value="5">
                                     <label class="form-check-label" for="Radio5">Refugio</label>
-                                </div>
+                                </div></div>
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col">
                                 <label >A sido beneficiado?</label><br>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+                                    <input class="form-check-input" type="radio" name="options" id="inlineRadio1" value="option1" checked>
                                     <label class="form-check-label" for="inlineRadio1">SI</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <input class="form-check-input" type="radio" name="options" id="inlineRadio2" value="option2">
                                     <label class="form-check-label" for="inlineRadio2">NO</label>
                                 </div> 
                             </div>
                         </div>
+                        <hr>
+                        <div class="row mt-3 ml-3">
+                            <h4> <b>Subir imágenes</b> </h4>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <label >Fotografía del beneficiario </label><br>
+                                <input type="file" class="form-control-file" multiple >
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <label >Fotografía del cónyugue </label><br>
+                                <input type="file" class="form-control-file" multiple >
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <label >Fotografía familiar </label><br>
+                                <input type="file" class="form-control-file" multiple >
+                            </div>
+                        </div>
+                        <div class="row mt-3 ml-3">
+                            <h6> Condición de vivienda </h6>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <label >Dormitorio </label><br>
+                                <input type="file" class="form-control-file" multiple >
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <label >Baño</label><br>
+                                <input type="file" class="form-control-file" multiple >
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <label >Cocina </label><br>
+                                <input type="file" class="form-control-file" multiple >
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <label >Frente de la casa </label><br>
+                                <input type="file" class="form-control-file" multiple >
+                            </div>
+                        </div>
+                    
                         <div class="row mt-3">
                             <div class="col">
                                 <a href="modificar-familia.html">Núcleo familiar</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col formulario_mensaje" id="formulario_mensaje">
+                                <p class="my-1"><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario </p>
                             </div>
                         </div>
                         <div class="row justify-content-md-center mt-3">
                             <div class="col-12">
                                 <div class="row">
                                     <div class="col-5 col-sm-5 col-md-3 col-lg-2 col-xl-2">
-                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Enviar</button>
+                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="validarCedula2();" >Enviar</button>
                                     </div>
                                     <div class="col-5 col-sm-5 col-md-3 col-lg-2 col-xl-2 ml-1">
                                         <button class="btn btn-outline-danger my-2 my-sm-0" type="reset">Limpiar</button>
@@ -166,7 +257,20 @@
         </div>
     </div>
 </div>
+<script>
+    formulario.addEventListener('submit', (e) => {
+      e.preventDefault()
+      console.log(campos.cedula_na)
+      if(campos.nombre || campos.apellido || campos.fecha || campos.correo  || campos.serial || campos.serial2 || campos.cedula || campos.cedula_na || campos.radioOptions || campos.options  ){
+       alert("Modificado exitosamente");
+      
+      } else {
+          alert("No se ha modificado nada");
+        }
+    });
+</script>
 
+<script src="js/formulario.js"></script>
 
 
 </body>

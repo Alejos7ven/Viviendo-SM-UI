@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Comunidad Hugo Chavez Frías</title>
+    <title>Comunidad Hugo Chávez Frías</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
     <link rel="stylesheet" href="css/style.css">
@@ -17,7 +17,7 @@
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="menu-principal.html">
             <img src="img/personas.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-            Hugo Chavez Frías
+            Hugo Chávez Frías
           </a>
         <div class="btn-group">
             <i class="fas fa-bell fa-lg mr-3 mt-2"></i>
@@ -26,9 +26,9 @@
               Perfil
             </button>
             <div class="dropdown-menu dropdown-menu-right" >
-              <a href="informacion.html" class="dropdown-item" id="perfil" role="button">Informacion</a>
+              <a href="informacion.html" class="dropdown-item" id="perfil" role="button">Información</a>
               <a href="editar.html" class="dropdown-item" id="perfil" role="button">Editar</a>
-              <a href="index.html" class="dropdown-item" id="perfil" role="button">Salir</a>
+              <a href="index.html" class="dropdown-item" id="perfil" role="button">Cerrar sesión</a>
             </div>
           </div>
     </nav>
@@ -38,7 +38,7 @@
                 <div class="card-header text-center">
                     <div class="row">
                         <div class="col-10 col-sm-10 col-md-10 col-lg-11 col-xl-11">
-                            <h4>Crear Evento</h4>
+                            <h4>Modificar Evento</h4>
                         </div>
                         <div class="col-2 col-sm-2 col-md-2 col-lg-1">
                             <a href="eventos.html">
@@ -48,25 +48,37 @@
                     </div>  
                 </div>
                 <div class="card-body ">
-                    <form action="">
+                    <form action="" class="formulario" id="formulario">
                         <div class="row">
-                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4">
-                                <label>Titulo</label>
-                                <input type="text" class="form-control" value="Entrega casas">
+                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 formulario_grupo" id="grupo_titulo">
+                                <label for="titulo" class="formulario_label">Titulo</label>
+                                <div class="formulario_grupo-input">
+                                    <input type="text" class="form-control formulario_input" name="titulo" id="titulo" value="entrega de casas" >
+                                    <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario_input-error">El título puede tener un max de 30 dígitos y solo puede contener numeros, letras y guion bajo.</p>
                             </div>
-                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4">
-                                <label>Fecha</label>
-                                <input type="date" class="form-control" value="2020-08-26" >
+                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 formulario_grupo" id="grupo_fecha">
+                                <label for="fecha" class="formulario_label">Fecha</label>
+                                <div class="formulario_grupo-input">
+                                    <input type="date" class="form-control formulario_input" name="fecha" id="fecha" value="2020-11-11" >
+                                </div>
                             </div>  
-                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 ">
-                                <label>Hora</label>
-                                <input type="time" class="form-control" value="08:30:00">
+                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 formulario_grupo" id="grupo_hora">
+                                <label for="hora" class="formulario_label">Hora</label>
+                                <div class="formulario_grupo-input">
+                                    <input type="time" class="form-control formulario_input" name="hora" id="hora" value="08:30:00" >
+                                </div>
                             </div>
                         </div>
                         <div class="row mt-3">
-                            <div class="col-12">
-                                <label>Lugar</label>
-                                <input type="text" class="form-control" value="Los roques" >
+                            <div class="col-12 formulario_grupo" id="grupo_lugar">
+                                <label for="lugar" class="formulario_label">Lugar</label>
+                                <div class="formulario_grupo-input">
+                                    <input type="text" class="form-control formulario_input" name="lugar" id="lugar" value="los roques" >
+                                    <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario_input-error">El lugar puede tener un max de 100 dígitos y solo puede contener numeros, letras y guion bajo.</p>
                             </div>
                         </div>
                         <div class="row">
@@ -75,14 +87,24 @@
                                 <textarea class="form-control" rows="3" >Entrega de casas a las personas asignada en la comunidad hugo chavez frias</textarea>
                             </div>
                         </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <a href="lista-asistencia.html">Ver asistentes</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mt-3 formulario_mensaje" id="formulario_mensaje">
+                                <p class="my-1"><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario </p>
+                            </div>
+                        </div>
                         <div class="row justify-content-md-center mt-3">
                             <div class="col-12">
                                 <div class="row">
                                     <div class="col-5 col-sm-5 col-md-3 col-lg-2 col-xl-2">
-                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Enviar</button>
+                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="location.reload();" value="Actualizar">Enviar</button>
                                     </div>
                                     <div class="col-5 col-sm-5 col-md-3 col-lg-2 col-xl-2 ml-1">
-                                        <button class="btn btn-outline-danger my-2 my-sm-0" type="reset">Limpiar</button>
+                                        <button class="btn btn-outline-danger my-2 my-sm-0" type="reset" onclick="location.reload();" value="Actualizar">Limpiar</button>
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +116,18 @@
         </div>
     </div>
 </div>
-
+<script>
+     formulario.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if(campos.titulo || campos.fecha || campos.lugar || campos.hora){
+       alert("Modificado exitosamente");
+      
+      } else {
+          alert("No se ha modificado nada");
+        }
+    });
+</script>
+<script src="js/formulario.js"></script>
 
 
 </body>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+    <script src="./js/jquery.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <form id="form">
+            <div class="row">
+                <div class="col-2">
+                    <button onclick="agg()" class="btn btn-success" >agg</button>
+                </div>
+                <div class="col-10">
+                    <div id="contenedor">
+    
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Nombre"  maxlength="10" >
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Apellido"> 
+                            </div>
+                            <div class="col-1">
+                                <button class="btn btn-danger eliminar-fila">Eliminar</button>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+
+    
+<script>
+    
+    const contenedor = $("#contenedor");
+    function agg(){
+
+        const inputs = `<div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Apellido"> 
+                        </div>
+                        <div class="col-1">
+                            <button class="btn btn-danger eliminar-fila">Eliminar</button>
+                        </div>
+                    </div>`;
+
+        $("#contenedor").append(inputs);
+    }
+    
+
+    $("#contenedor").on("click", ".eliminar-fila", function(e) {
+        e.preventDefault();
+         
+        $(this).parents(".row")[0].remove();
+    })
+
+   
+    $("#form").submit(function(e) {
+        e.preventDefault();
+
+        console.log("enviado");
+    })
+
+    
+</script>
+</body>
+</html>

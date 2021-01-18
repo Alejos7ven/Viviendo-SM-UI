@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Comunidad Hugo Chavez Frías</title>
+    <title>Comunidad Hugo Chávez Frías</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
     <link rel="stylesheet" href="css/style.css">
@@ -14,179 +14,226 @@
 </head>
 <body>
     <div class="container-fluid">
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="menu-principal.html">
-            <img src="img/personas.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-            Hugo Chavez Frías
-          </a>
-        <div class="btn-group">
-            <i class="fas fa-bell fa-lg mr-3 mt-2"></i>
-            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-user"></i>
-              Perfil
-            </button>
-            <div class="dropdown-menu dropdown-menu-right" >
-              <a href="informacion.html" class="dropdown-item" id="perfil" role="button">Informacion</a>
-              <a href="editar.html" class="dropdown-item" id="perfil" role="button">Editar</a>
-              <a href="index.html" class="dropdown-item" id="perfil" role="button">Salir</a>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="menu-principal.html">
+                <img src="img/personas.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                 Hugo Chávez Frías
+            </a>
+            <div class="btn-group">
+                <i class="fas fa-bell fa-lg mr-3 mt-2"></i>
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user"></i>
+                Perfil
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" >
+                <a href="informacion.html" class="dropdown-item" id="perfil" role="button">Información</a>
+                <a href="editar.html" class="dropdown-item" id="perfil" role="button">Editar</a>
+                <a href="index.html" class="dropdown-item" id="perfil" role="button">Cerrar sesión</a>
+                </div>
             </div>
-          </div>
-    </nav>
-    <div class="row">
-        <div class="col">
-            <div class="card border-danger mb-3 ml-5 mr-5 mt-3" >
-                <div class="card-header text-center">
-                    <div class="row">
-                        <div class="col-10 col-sm-10 col-md-10 col-lg-11 col-xl-11">
-                            <h4>Modificar familia</h4>
-                        </div>
-                        <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1">
-                            <a href="nucleo-familiar.html">
-                                <i class="fas fa-times text-danger"></i>
-                            </a>
-                        </div>
-                    </div>  
+        </nav>
+        <div class="row">
+            <div class="col">
+                <div class="card border-danger mb-3 ml-5 mr-5 mt-3" >
+                    <div class="card-header text-center">
+                        <div class="row">
+                            <div class="col-10 col-sm-10 col-md-10 col-lg-11 col-xl-11">
+                                <h4>Modificar familia</h4>
+                            </div>
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1">
+                                <a href="nucleo-familiar.html">
+                                    <i class="fas fa-times text-danger"></i>
+                                </a>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="card-body ">
+                        <form action="" class="formulario" id="formulario">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <h5 class="">Datos del cónyuge</h5>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6 formulario_grupo" id="grupo_nombre">
+                                    <label for="nombre" class="formulario_label">Nombres</label>
+                                    <div class="formulario_grupo-input">
+                                        <input type="text" class="form-control formulario_input" name="nombre" id="nombre" value="Arianna Paola" >
+                                        <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                                    </div>
+                                    <p class="formulario_input-error">El Nombre tiene que ser de 4-30 dígitos y solo puede contener letras y acentos</p>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6 formulario_grupo" id="grupo_apellido">
+                                    <label for="apellido" class="formulario_label">Apellidos</label>
+                                    <div class="formulario_grupo-input">
+                                        <input type="text" class="form-control formulario_input" name="apellido" id="apellido" value="Colmenarez Ramones">
+                                        <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                                    </div>
+                                    <p class="formulario_input-error">El apellido tiene que ser de 3-30 dígitos y solo puede contener letras y acentos.</p>
+                                </div>  
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 ">
+                                    <div class="formulario_grupo" id="grupo_cedula_na">
+                                        <label>Cedula</label>
+                                        <div class="row ">
+                                            <div class="col-4 formulario_grupo-input" >
+                                                <select class="form-control formulario_input" name="cedula_na" id="cedula_na">
+                                                    <option value="0">V</option>
+                                                    <option value="1">-</option>
+                                                    <option value="2">E</option>
+                                                    <option value="3">J</option>
+                                                    <option value="4">G</option>
+                                                </select>
+                                                <p id="opcion" class="formulario_input-error">Seleccione una opción.</p>
+                                            </div>
+                                            <div class="col-8 formulario_grupo-input" id="grupo_cedula">
+                                                <input type="text" class="form-control formulario_input" name="cedula" id="cedula" value="12837381" >
+                                                <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                                            </div>
+                                            <p class="formulario_input-error">La Cedula solo puede contener números.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 formulario_grupo" id="grupo_fecha">
+                                    <label for="fecha" class="formulario_label">Fecha de nacimiento</label>
+                                    <div class="formulario_grupo-input">
+                                        <input type="date" class="form-control formulario_input" name="fecha" id="fecha" value="2001-02-25" >
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 formulario_grupo" id="grupo_telefono">
+                                    <label for="telefono" class="formulario_label">Teléfono</label>
+                                    <div class="formulario_grupo-input">
+                                        <input type="text" class="form-control formulario_input" name="telefono" id="telefono" value="04261904563">
+                                        <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                                    </div>
+                                    <p class="formulario_input-error">El teléfono solo puede contener números.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col mt-3">
+                                    <label>¿Viven juntos?</label><br>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="options" id="inlineRadio1" value="option1" checked>
+                                        <label class="form-check-label" for="inlineRadio1">SI</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="options" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">NO</label>
+                                    </div> 
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <h5 class="">Datos de los hijos</h5>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label >Cantidad de hijos</label><br>
+                                    <input type="number" min="0" class="form-control w-25" value="0">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6 formulario_grupo" id="grupo_nombre2">
+                                    <label for="nombre2" class="formulario_label">Nombres</label>
+                                    <div class="formulario_grupo-input">
+                                        <input type="text" class="form-control formulario_input" name="nombre2" id="nombre2" >
+                                        <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                                    </div>
+                                    <p class="formulario_input-error">El Nombre tiene que ser de 4-30 dígitos y solo puede contener letras y acentos</p>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6 formulario_grupo" id="grupo_apellido2">
+                                    <label for="apellido2" class="formulario_label">Apellidos</label>
+                                    <div class="formulario_grupo-input">
+                                        <input type="text" class="form-control formulario_input" name="apellido2" id="apellido2" >
+                                        <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                                    </div>
+                                    <p class="formulario_input-error">El apellido tiene que ser de 3-30 dígitos y solo puede contener letras y acentos.</p>
+                                </div>  
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6 ">
+                                    <label>Cedula</label>
+                                    <div class="row ">
+                                        <div class="col-4">
+                                            <select class="form-control ">
+                                                <option>-</option>
+                                                <option>V</option>
+                                                <option>E</option>
+                                                <option>J</option>
+                                                <option>G</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-8 formulario_grupo-input" id="grupo_cedula2">
+                                            <input type="text" class="form-control formulario_input" name="cedula2" id="cedula2"  >
+                                            <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                                        </div>
+                                        <p class="formulario_input-error">La Cedula solo puede contener números.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6 formulario_grupo" id="grupo_fecha2">
+                                    <label for="fecha2" class="formulario_label">Fecha de nacimiento</label>
+                                    <div class="formulario_grupo-input">
+                                        <input type="date" class="form-control formulario_input" name="fecha2" id="fecha2" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <label>¿Estudian?</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="radioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">SI</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="radioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">NO</label>
+                                    </div> 
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col formulario_mensaje" id="formulario_mensaje">
+                                    <p class="my-1"><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario </p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-md-center mt-3">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-5 col-sm-5 col-md-3 col-lg-2 col-xl-2">
+                                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"onclick="validarCedula();">Enviar</button>
+                                        </div>
+                                        <div class="col-5 col-sm-5 col-md-3 col-lg-2 col-xl-2 ml-1">
+                                            <button class="btn btn-outline-danger my-2 my-sm-0" type="reset">Limpiar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="card-body ">
-                    <form action="">
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <h5 class="">Datos del cónyuge</h5>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6">
-                                <label>Nombres</label>
-                                <input type="text" class="form-control" value="Jose Manuel" >
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6">
-                                <label>Apellidos</label>
-                                <input type="text" class="form-control" value="Colmenarez" >
-                            </div>  
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 ">
-                                <label>Cedula</label>
-                                <div class="row ">
-                                    <div class="col-4">
-                                        <select class="form-control ">
-                                            <option>V</option>
-                                            <option>-</option>
-                                            <option>E</option>
-                                            <option>J</option>
-                                            <option>G</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-8">
-                                        <input type="text" class="form-control" value="9618003" >
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4">
-                                <label>Fecha de nacimiento</label>
-                                <input type="date" class="form-control" value="1967-12-25" >
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4">
-                                <label >Teléfono</label>
-                                <input type="text" class="form-control" value="04268939929" >
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col mt-3">
-                                <label>¿Viven juntos?</label><br>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                    <label class="form-check-label" for="inlineRadio1">SI</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked>
-                                    <label class="form-check-label" for="inlineRadio2">NO</label>
-                                </div> 
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <h5 class="">Datos de los hijos</h5>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-12">
-                                <label >Cantidad de hijos</label><br>
-                                <input type="number" min="0" class="form-control w-25">
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6">
-                                <label>Nombres</label>
-                                <input type="text" class="form-control" >
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-lg-6">
-                                <label>Apellidos</label>
-                                <input type="text" class="form-control" >
-                            </div>  
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 ">
-                                <label>Cedula</label>
-                                <div class="row ">
-                                    <div class="col-4">
-                                        <select class="form-control ">
-                                            <option>-</option>
-                                            <option>V</option>
-                                            <option>E</option>
-                                            <option>J</option>
-                                            <option>G</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-8">
-                                        <input type="text" class="form-control" >
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4">
-                                <label>Fecha de nacimiento</label>
-                                <input type="date" class="form-control" value="2001/02/25" >
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-lg-4">
-                                <label >Edad</label>
-                                <input type="number" min="0" class="form-control" >
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col">
-                                <label>¿Estudian?</label>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                    <label class="form-check-label" for="inlineRadio1">SI</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">NO</label>
-                                </div> 
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row justify-content-md-center mt-3">
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-5 col-sm-5 col-md-3 col-lg-2 col-xl-2">
-                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Enviar</button>
-                                    </div>
-                                    <div class="col-5 col-sm-5 col-md-3 col-lg-2 col-xl-2 ml-1">
-                                        <button class="btn btn-outline-danger my-2 my-sm-0" type="reset">Limpiar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-        </div>
+            </div>
+        </div>        
     </div>
 </div>
+<script>
+    formulario.addEventListener('submit', (e) => {
+      e.preventDefault()
+      console.log(campos.cedula_na)
+      if(campos.nombre || campos.apellido || campos.fecha || campos.options || campos.cedula || campos.cedula_na || campos.nombre2 || campos.apellido2 || campos.fecha2 || campos.radioOptions){
+       alert("Modificado exitosamente");
+      
+      } else {
+          alert("No se ha modificado nada");
+        }
+    });
+</script>
 
+<script src="js/formulario.js"></script>
 
 
 </body>

@@ -15,3 +15,59 @@
     text-align: right;
     align-items: right;
 }
+.formulario_grupo-input{
+    position: relative;
+}
+.formulario_input-error{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+    margin-top: 10px;
+}
+.formulario_input-error-activo{
+    display: block;
+}
+
+
+.formulario_validacion-estado{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+.formulario_mensaje{
+    background-color: #e22f29;
+    border-radius: 3px;
+    display: none;
+}
+.formulario_mensaje-activo{
+    display: block;
+}
+.formulario_mensaje-exito{
+    font-size: 14px;
+    color: #119200;
+    display: none;
+}
+.formulario_mensaje-exito-activo{
+    display: block;
+}
+.formulario_grupo-correcto .formulario_validacion-estado{
+color: #119200;
+opacity: 1;
+}
+.formulario_grupo-incorrecto .formulario_label{
+    color: #ee3e38;
+    
+}
+.formulario_grupo-incorrecto .formulario_validacion-estado{
+    color: #ee3e38;
+    opacity: 1;
+}
+.formulario_grupo-incorrecto .formulario_input{
+    border: 3px solid #ee3e38;
+    box-shadow: none;
+}
+
+
